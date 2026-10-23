@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">River winding between green banks in the morning</title>
+  <rect width="420" height="315" fill="#e0f0ef"/><circle cx="325" cy="58" r="32" fill="#f5cd72"/>
+  <path d="M0 157Q90 110 180 162t240 8v145H0z" fill="#8cb97e"/>
+  <path d="M0 205Q105 165 194 206t226 0v109H0z" fill="#559f9e"/>
+  <path d="M180 315Q205 260 170 222t-8-55q33 6 53 46t-2 102" fill="#83c8c4"/>
+  <path d="M52 178q21-42 43 0m185 15q18-38 36 0" stroke="#427d55" stroke-width="7" stroke-linecap="round"/>
+</svg>

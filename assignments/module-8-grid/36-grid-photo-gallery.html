@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive CSS Grid gallery of original campus and study illustrations.">
+  <title>Campus Moments Gallery</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; background: #f4f6f3; color: #263a43; font: 1rem/1.5 system-ui, sans-serif; }
+    main { max-width: 1100px; margin: auto; }
+    .gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    figure { overflow: hidden; margin: 0; border-radius: .9rem; background: white; box-shadow: 0 4px 16px #17333c16; }
+    img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    figcaption { padding: .8rem 1rem; font-weight: 650; }
+    @media (max-width: 760px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 500px) { .gallery { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Small moments from a made-up campus day</p><h1>Campus Moments</h1>
+    <div class="gallery">
+      <figure><img src="../../assets/images/campus-path.svg" alt="A path between warm-coloured campus buildings and trees"><figcaption>The way to class</figcaption></figure>
+      <figure><img src="../../assets/images/study-desk.svg" alt="A notebook, pencil, and plant on a study desk"><figcaption>A quiet study corner</figcaption></figure>
+      <figure><img src="../../assets/images/idea-cards.svg" alt="Three colourful cards arranged as learning steps"><figcaption>Ideas in progress</figcaption></figure>
+      <figure><img src="../../assets/images/riverwalk.svg" alt="A blue river winding past green banks beneath the morning sky"><figcaption>Morning walk</figcaption></figure>
+      <figure><img src="../../assets/images/windowlight.svg" alt="Sunlight falling through a window onto a reading chair"><figcaption>Reading break</figcaption></figure>
+      <figure><img src="../../assets/images/morninggarden.svg" alt="A small garden with leaves, flowers, and a curved path"><figcaption>Garden pause</figcaption></figure>
+    </div>
+  </main>
+</body>
+</html>

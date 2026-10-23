@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">A small garden with leaves, flowers, and a curved path</title>
+  <rect width="420" height="315" fill="#e8f1d9"/><circle cx="334" cy="67" r="34" fill="#f3c96b"/>
+  <path d="M0 180q110-46 210 0t210-8v143H0z" fill="#9bc17b"/>
+  <path d="M0 278q105-66 196-22t224-24v83H0z" fill="#dfc89d"/>
+  <path d="M62 315q24-59 53-82m244 82q-37-56-62-83" fill="none" stroke="#7a8c64" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#5d996b"><ellipse cx="85" cy="145" rx="18" ry="44" transform="rotate(-38 85 145)"/><ellipse cx="126" cy="137" rx="18" ry="40" transform="rotate(35 126 137)"/><ellipse cx="294" cy="161" rx="18" ry="43" transform="rotate(-30 294 161)"/></g>
+  <g fill="#df8066"><circle cx="190" cy="149" r="13"/><circle cx="208" cy="149" r="13"/><circle cx="199" cy="132" r="13"/><circle cx="199" cy="166" r="13"/><circle cx="199" cy="149" r="8" fill="#f2d47a"/></g>
+</svg>

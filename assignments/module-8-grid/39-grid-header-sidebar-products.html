@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive catalogue layout with a CSS Grid header, sidebar, and product section.">
+  <title>North Window Product Catalogue</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #293845; background: #faf8f2; font: 1rem/1.5 system-ui, sans-serif; }
+    .shop { display: grid; grid-template-columns: 220px minmax(0, 1fr); grid-template-areas: "header header" "sidebar products"; gap: 1rem; max-width: 1150px; margin: auto; padding: 1rem; }
+    header { grid-area: header; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem; border-radius: .7rem; background: #e6eee8; }
+    aside { grid-area: sidebar; padding: 1rem; border: 1px solid #d9ded9; border-radius: .7rem; background: white; }
+    .products { grid-area: products; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 1rem; }
+    article { padding: 1rem; border: 1px solid #d9ded9; border-radius: .7rem; background: white; }
+    .tile { display: grid; min-height: 120px; place-items: center; border-radius: .5rem; background: linear-gradient(135deg, #bddfd2, #f3d99d); font-size: 2rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+    @media (max-width: 700px) { .shop { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "products"; } }
+  </style>
+</head>
+<body>
+  <div class="shop">
+    <header><a href="#catalogue"><strong>North Window</strong></a><nav aria-label="Store links"><a href="#catalogue">Catalogue</a><a href="#help">Help</a><a href="#basket">Basket (0)</a></nav></header>
+    <aside><h2>Browse</h2><ul><li><a href="#stationery">Stationery</a></li><li><a href="#lighting">Desk lighting</a></li><li><a href="#organisers">Organisers</a></li></ul><h3>Price</h3><p>Sample products under ₹1,000</p></aside>
+    <main id="catalogue" class="products">
+      <article id="stationery"><div class="tile" aria-hidden="true">✎</div><h2>Daily Notes Pad</h2><p>Open pages for quick ideas.</p><strong>₹160</strong></article>
+      <article id="lighting"><div class="tile" aria-hidden="true">☼</div><h2>Warm Desk Lamp</h2><p>A gentle light for a reading corner.</p><strong>₹780</strong></article>
+      <article id="organisers"><div class="tile" aria-hidden="true">▤</div><h2>Card Tray</h2><p>A small place for study cards.</p><strong>₹240</strong></article>
+    </main>
+  </div>
+  <footer style="max-width:1150px;margin:auto;padding:1rem"><section id="help"><h2>Help</h2><p>Check the sample product details before choosing an item.</p></section><section id="basket"><h2>Basket</h2><p>Your sample basket is currently empty.</p></section></footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Grid-based portfolio showcasing original student practice projects.">
+  <title>Project Shelf Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; color: #233b45; background: #f5f7f2; font: 1rem/1.55 system-ui, sans-serif; }
+    main { max-width: 1050px; margin: auto; }
+    .intro { max-width: 650px; margin-bottom: 2rem; }
+    .projects { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1rem; }
+    article { grid-column: span 4; overflow: hidden; border: 1px solid #d5dfda; border-radius: .9rem; background: white; }
+    article:first-child { grid-column: span 8; }
+    .banner { min-height: 150px; padding: 1rem; background: linear-gradient(135deg, #c9e5db, #f2d28b); }
+    article:nth-child(2) .banner { background: linear-gradient(135deg, #e2d8f0, #b9cbe8); }
+    article:nth-child(3) .banner { background: linear-gradient(135deg, #f4c8ae, #f0e1b2); }
+    article:nth-child(4) .banner { background: linear-gradient(135deg, #c5dce4, #d8e9d1); }
+    .copy { padding: 1rem; }
+    .copy h2 { margin-top: 0; }
+    @media (max-width: 720px) { article, article:first-child { grid-column: span 6; } }
+    @media (max-width: 480px) { article, article:first-child { grid-column: 1 / -1; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="intro"><p>Selected practice work</p><h1>Project Shelf</h1><p>A small portfolio of pages built while learning structure, forms, and layout.</p></section>
+    <section class="projects" aria-label="Practice projects">
+      <article><div class="banner">01 · HTML</div><div class="copy"><h2>Course Guide</h2><p>A structured page that uses headings and lists to explain a course.</p></div></article>
+      <article><div class="banner">02 · FORMS</div><div class="copy"><h2>Registration</h2><p>A form with labels and useful input types.</p></div></article>
+      <article><div class="banner">03 · FLEX</div><div class="copy"><h2>Study Shelf</h2><p>Product cards that wrap as the screen narrows.</p></div></article>
+      <article><div class="banner">04 · GRID</div><div class="copy"><h2>Campus Moments</h2><p>A simple image gallery arranged with CSS Grid.</p></div></article>
+    </section>
+  </main>
+</body>
+</html>

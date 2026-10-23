@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A study dashboard arranged with named CSS Grid areas.">
+  <title>Study Dashboard Grid Areas</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 1rem; background: #eef2f4; color: #23394b; font: 1rem/1.5 system-ui, sans-serif; }
+    .dashboard { display: grid; grid-template-columns: 210px 1fr; grid-template-areas: "header header" "sidebar main" "sidebar footer"; gap: 1rem; max-width: 1100px; margin: auto; }
+    header { grid-area: header; padding: 1.2rem; border-radius: .7rem; background: #194f63; color: white; }
+    aside { grid-area: sidebar; padding: 1rem; border-radius: .7rem; background: #d9e7ec; }
+    main { grid-area: main; }
+    .panel { padding: 1rem; border-radius: .7rem; background: white; }
+    footer { grid-area: footer; padding: 1rem; color: #516674; }
+    @media (max-width: 650px) { .dashboard { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "main" "footer"; } }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <header><p>Open Desk</p><h1>Weekly Study Dashboard</h1></header>
+    <aside><h2>Menu</h2><ul><li>Overview</li><li>Topics</li><li>Notes</li></ul></aside>
+    <main><section class="panel"><h2>Today's focus</h2><p>Review semantic HTML and practise one layout exercise.</p><h3>Next session</h3><p>Responsive design · Friday</p></section></main>
+    <footer><p>Dashboard regions use the names header, sidebar, main, and footer.</p></footer>
+  </div>
+</body>
+</html>

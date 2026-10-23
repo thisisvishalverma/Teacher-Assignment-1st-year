@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Sunlight through a window beside a reading chair</title>
+  <rect width="420" height="315" fill="#f6e9d4"/><rect x="50" y="38" width="170" height="148" rx="4" fill="#fff8e8" stroke="#7e9c95" stroke-width="9"/>
+  <path d="M135 42v140M55 112h160" stroke="#7e9c95" stroke-width="7"/>
+  <path d="m220 90 125 62-50 142-125-64z" fill="#f3cc79" opacity=".7"/>
+  <path d="M245 222h115v26H245zm14-55h85v55h-85z" fill="#5e7b83"/><path d="M259 248v48m73-48v48" stroke="#435e65" stroke-width="9"/>
+  <rect x="72" y="238" width="88" height="35" rx="7" fill="#bf775d"/><path d="M87 238q10-54 32-26 18-35 36 26" fill="#6e9a70"/>
+</svg>
