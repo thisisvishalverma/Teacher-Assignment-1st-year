@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small product listing that wraps cards with Flexbox.">
+  <title>Flex-Wrap Product Shelf</title>
+  <style>
+    body { margin: 0; padding: 2rem 1rem; background: #f4f6f2; color: #263a34; font: 1rem/1.5 system-ui, sans-serif; }
+    main { max-width: 1040px; margin: auto; }
+    .products { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .product { flex: 1 1 220px; max-width: 320px; padding: 1rem; border: 1px solid #d1dbd1; border-radius: .7rem; background: white; }
+    .swatch { height: 100px; border-radius: .45rem; background: linear-gradient(135deg, #f2cc7a, #acd6c1); }
+    .product:nth-child(2) .swatch { background: linear-gradient(135deg, #b8c9ed, #dce6f7); }
+    .product:nth-child(3) .swatch { background: linear-gradient(135deg, #edae95, #f4d8c4); }
+    .product:nth-child(4) .swatch { background: linear-gradient(135deg, #9fc4ac, #e1ebc7); }
+  </style>
+</head>
+<body>
+  <main><h1>Tools for a Study Break</h1><p>Cards have a flexible base size and wrap onto new lines as space changes.</p>
+    <section class="products" aria-label="Sample products">
+      <article class="product"><div class="swatch" aria-hidden="true"></div><h2>Field Journal</h2><p>A small notebook for questions and sketches.</p><strong>₹180</strong></article>
+      <article class="product"><div class="swatch" aria-hidden="true"></div><h2>Focus Timer</h2><p>A simple timer for a short study session.</p><strong>₹320</strong></article>
+      <article class="product"><div class="swatch" aria-hidden="true"></div><h2>Desk Light</h2><p>A warm light for an evening reading corner.</p><strong>₹650</strong></article>
+      <article class="product"><div class="swatch" aria-hidden="true"></div><h2>Page Tabs</h2><p>Colour-coded tabs for quick revision.</p><strong>₹95</strong></article>
+    </section>
+  </main>
+</body>
+</html>

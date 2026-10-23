@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive flex menu bar for a fictional student club.">
+  <title>Flex Menu Bar</title>
+  <style>
+    body { margin: 0; padding: 2rem 1rem; color: #213947; background: #f5f7f4; font: 1rem/1.5 system-ui, sans-serif; }
+    .menu { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.2rem; max-width: 960px; margin: auto; padding: 1rem; border-radius: .7rem; background: #fff; box-shadow: 0 4px 20px #172c3212; }
+    .brand { margin-right: auto; color: #135e51; font-size: 1.25rem; font-weight: 800; }
+    a { color: #294e5b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .join { padding: .5rem .8rem; border-radius: 99px; background: #135e51; color: white; }
+  </style>
+</head>
+<body>
+  <nav class="menu" aria-label="Main navigation"><a class="brand" href="#home">Open Desk</a><a href="#sessions">Sessions</a><a href="#projects">Projects</a><a href="#about">About</a><a class="join" href="#join">Join a session</a></nav>
+  <main id="home" style="max-width:960px;margin:2rem auto;padding:0 1rem"><h1>One menu, many screen widths</h1><p>The flex items can wrap when there is not enough room.</p>
+    <section id="sessions"><h2>Sessions</h2><p>Try a short HTML or CSS practice session.</p></section>
+    <section id="projects"><h2>Projects</h2><p>Make a small page and explain one design choice.</p></section>
+    <section id="about"><h2>About</h2><p>Open Desk is a fictional student learning club.</p></section>
+    <section id="join"><h2>Join a session</h2><p>Choose one topic to practise next.</p></section>
+  </main>
+</body>
+</html>

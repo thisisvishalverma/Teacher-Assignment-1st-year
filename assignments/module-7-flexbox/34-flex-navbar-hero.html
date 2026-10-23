@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive navbar and hero layout using Flexbox.">
+  <title>Flexbox Navbar and Hero</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #223b42; background: #f7f5ed; font: 1rem/1.55 system-ui, sans-serif; }
+    header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem max(1rem, calc((100% - 1000px) / 2)); background: white; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+    nav a, .brand { color: #1d5d56; text-decoration: none; }
+    .brand { font-weight: 800; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; max-width: 1000px; min-height: 420px; margin: auto; padding: 3rem 1rem; }
+    .copy, .visual { flex: 1 1 280px; }
+    h1 { max-width: 12ch; font-size: clamp(2.4rem, 7vw, 4.5rem); line-height: 1; }
+    .visual { display: grid; min-height: 260px; place-items: center; border-radius: 50% 50% 45% 55%; background: #d8ecdf; }
+    .book { padding: 2.5rem 2rem; border-radius: .6rem; background: #f1c773; box-shadow: 10px 12px 0 #1b5c5530; }
+    @media (max-width: 600px) { header { align-items: flex-start; } .hero { padding-block: 2rem; } }
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="#home">Fieldnote</a><nav aria-label="Main navigation"><a href="#ideas">Ideas</a><a href="#sessions">Sessions</a><a href="#about">About</a></nav></header>
+  <main id="home"><section class="hero"><section class="copy"><p>Learn by making</p><h1>Build one small idea today.</h1><p>Try a focused project and learn what each part of the page does.</p><a href="#sessions">Find a session</a></section><div class="visual" aria-hidden="true"><div class="book">Make<br>notes</div></div></section>
+    <section id="ideas" style="max-width:1000px;margin:1rem auto;padding:1rem"><h2>Ideas</h2><p>Choose a small question and sketch a page that could answer it.</p></section>
+    <section id="sessions" style="max-width:1000px;margin:1rem auto;padding:1rem"><h2>Sessions</h2><p>Practise one web skill in a short, focused session.</p></section>
+    <section id="about" style="max-width:1000px;margin:1rem auto;padding:1rem"><h2>About</h2><p>Fieldnote is a fictional student project for learning by making.</p></section>
+  </main>
+</body>
+</html>

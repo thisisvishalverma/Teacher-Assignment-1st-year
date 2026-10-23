@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A login form centred in the page using Flexbox alignment.">
+  <title>Centered Login Form</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { display: flex; min-height: 100vh; justify-content: center; align-items: center; margin: 0; padding: 1rem; background: #e7f0f0; color: #253b46; font: 1rem/1.5 system-ui, sans-serif; }
+    .login { width: min(100%, 390px); padding: 1.5rem; border-radius: 1rem; background: white; box-shadow: 0 12px 34px #1a45511a; }
+    label { display: block; margin: .9rem 0 .25rem; font-weight: 650; }
+    input { width: 100%; padding: .7rem; border: 1px solid #9aafb5; border-radius: .4rem; font: inherit; }
+    button { width: 100%; margin-top: 1rem; padding: .75rem; border: 0; border-radius: .4rem; background: #175e65; color: white; font: inherit; }
+  </style>
+</head>
+<body>
+  <main class="login"><p>Open Desk learning club</p><h1>Welcome back</h1><p>Practice layout with this sample sign-in form.</p><form action="#" method="get"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required><button type="submit">Continue</button></form></main>
+</body>
+</html>
