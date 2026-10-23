@@ -28,6 +28,6 @@ No screenshot, software version, personal contact detail, or GitHub URL has been
 
 ## Local verification
 
-The HTML pages and local references were checked. The 46 HTML routes returned HTTP 200 from a local server; all pages have a title, charset, viewport, and description; image elements have alt text; local asset paths resolve; and in-page links point to existing sections. The responsive exercises were checked at desktop, tablet, and phone widths. See `CHECKLIST.md` for remaining evidence and publication steps.
+The HTML pages and local references were checked. The 46 HTML routes returned HTTP 200 from a local server; all pages have a title, charset, viewport, and description; image elements have alt text; local asset paths resolve; and in-page links point to existing sections. The responsive exercises were checked at desktop, tablet, and phone widths. Nine meaningful commits are recorded locally on `main`; no remote is configured and nothing has been pushed. See `CHECKLIST.md` for remaining evidence and publication steps.
 
 No packages or build tools are required to view the pages.

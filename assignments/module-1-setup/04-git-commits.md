@@ -1,6 +1,18 @@
 # Assignment 4: Meaningful Git Commits
 
-The project history will be built in local milestones so each commit explains one useful change. The first milestones are planned around the setup and HTML basics, forms and metadata, visual styling, layout, and responsive integration. After the work is committed, check the history with:
+The local repository now has nine meaningful commits on the `main` branch. Each commit groups work by a useful topic:
+
+- `docs: add assignment plan and checklist`
+- `feat: add setup notes and HTML fundamentals`
+- `feat: add accessible portfolio and list exercises`
+- `feat: add forms tables and multi-page project`
+- `feat: add CSS fundamentals and styled project`
+- `feat: add box model and positioning exercises`
+- `feat: add Flexbox layout exercises`
+- `feat: add Grid layouts and gallery artwork`
+- `feat: add responsive design assignments`
+
+Check the local history with:
 
 ```powershell
 git log --oneline

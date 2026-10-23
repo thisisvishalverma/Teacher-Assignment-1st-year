@@ -7,7 +7,7 @@ The checkbox reflects work completed locally. Items that require your computer o
 - [x] **01** Explain what happens between entering a URL and seeing a page.
 - [ ] **02** Verify VS Code, Node.js, and Live Server; add your real screenshot.
 - [ ] **03** Run the terminal practice and open the project in VS Code; record your commands.
-- [ ] **04** Create at least three meaningful Git commits. (Local Git history is being prepared.)
+- [x] **04** Create at least three meaningful Git commits. (Nine local commits are recorded.)
 - [ ] **05** Create/select your separate GitHub repository, confirm the push, and add its URL.
 
 ## Module 2: HTML Basics
@@ -78,7 +78,7 @@ The checkbox reflects work completed locally. Items that require your computer o
 
 - Task 2 setup screenshot and actual installed versions.
 - Task 3 terminal run and VS Code action.
-- Task 4 local commit history (the checklist will be updated after commits are made).
+- [x] Task 4 local commit history has nine meaningful commits.
 - Task 5 GitHub repository link and confirmed push.
 - Task 26 annotated screenshot from your computer.
 - Task 44 push after your confirmation.
