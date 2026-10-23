@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student portfolio page with working internal navigation links.">
+  <title>Portfolio Map</title>
+  <style>
+    body { max-width: 760px; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #17324d; }
+    nav ul { display: flex; flex-wrap: wrap; gap: 1rem; padding: 1rem; background: #edf5f4; list-style: none; }
+    a { color: #145f57; }
+    section { min-height: 11rem; padding: 1rem 0; border-bottom: 1px solid #c5d8d6; }
+  </style>
+</head>
+<body>
+  <header id="top"><h1>Portfolio Map</h1><p>Choose a section to jump to it.</p></header>
+  <nav aria-label="Portfolio sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Practice work</a></li>
+      <li><a href="#goals">Learning goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about"><h2>About</h2><p>I am learning to build clear, accessible pages with HTML and CSS.</p></section>
+    <section id="work"><h2>Practice work</h2><p>My current projects include a course page, a registration form, and a responsive landing page.</p></section>
+    <section id="goals"><h2>Learning goals</h2><p>I am practising semantic structure, layout, and responsive design.</p></section>
+    <section id="contact"><h2>Contact</h2><p>Add your own preferred contact method here.</p><a href="#top">Back to the top</a></section>
+  </main>
+</body>
+</html>

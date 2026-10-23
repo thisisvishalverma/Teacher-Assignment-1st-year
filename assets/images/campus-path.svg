@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title">
+  <title id="title">A path between campus buildings and trees</title>
+  <rect width="420" height="260" rx="24" fill="#dff0f0"/>
+  <rect y="172" width="420" height="88" fill="#a9c68d"/>
+  <rect x="52" y="74" width="104" height="111" fill="#f5d4a2"/><path d="M42 78 104 40l62 38" fill="#547a84"/>
+  <rect x="264" y="58" width="100" height="128" fill="#f2c89b"/><path d="M252 62 314 28l62 34" fill="#547a84"/>
+  <path d="M181 260 208 152h37l39 108" fill="#dfbd91"/>
+  <circle cx="38" cy="144" r="31" fill="#5c9b69"/><rect x="34" y="146" width="8" height="40" fill="#7b6247"/>
+  <circle cx="390" cy="137" r="30" fill="#5c9b69"/><rect x="386" y="140" width="8" height="45" fill="#7b6247"/>
+</svg>
