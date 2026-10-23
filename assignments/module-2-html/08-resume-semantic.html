@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A semantic student resume using meaningful HTML sections.">
+  <title>Student Resume - Semantic HTML</title>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>BCA AI Student · your.email@example.com · City, State</p>
+  </header>
+  <main>
+    <section aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Profile</h2>
+      <p>I enjoy learning how technology can make everyday information easier to use.</p>
+    </section>
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article>
+        <h3>Bachelor of Computer Applications - Artificial Intelligence</h3>
+        <p>Your College Name · Expected graduation: Year</p>
+      </article>
+    </section>
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills in Progress</h2>
+      <ul>
+        <li>Writing structured HTML</li>
+        <li>Styling pages with CSS</li>
+        <li>Explaining a solution step by step</li>
+      </ul>
+    </section>
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Practice Project</h2>
+      <article>
+        <h3>Revision Planner</h3>
+        <p>A simple page that groups study topics into a weekly plan.</p>
+      </article>
+    </section>
+  </main>
+  <footer><p>Replace the sample contact and college details with your own.</p></footer>
+</body>
+</html>
