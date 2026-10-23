@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A job application form demonstrating a broad set of labelled HTML controls.">
+  <title>Junior Web Assistant Application</title>
+  <style>
+    :root { color-scheme: light; font: 1rem/1.5 system-ui, sans-serif; color: #203247; background: #f2f6f8; }
+    body { max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+    form { padding: 1.25rem; background: white; border-radius: 1rem; }
+    fieldset { margin: 1rem 0; padding: 1rem; border: 1px solid #bccbd3; border-radius: .6rem; }
+    legend { padding: 0 .4rem; font-weight: 700; }
+    .field { margin: .8rem 0; }
+    label { display: block; margin-bottom: .25rem; font-weight: 600; }
+    input:not([type="radio"]):not([type="checkbox"]):not([type="hidden"]), select, textarea { box-sizing: border-box; width: 100%; padding: .6rem; border: 1px solid #899caa; border-radius: .35rem; font: inherit; }
+    .choice label { display: inline-flex; align-items: center; gap: .4rem; margin: .35rem .8rem .35rem 0; font-weight: 400; }
+    .choice input { width: auto; }
+    button, input[type="submit"], input[type="reset"], input[type="button"] { width: auto; margin: .5rem .4rem .5rem 0; padding: .65rem .9rem; border: 0; border-radius: .35rem; background: #225f72; color: white; font: inherit; }
+    input[type="reset"] { background: #687783; }
+    input[type="range"] { accent-color: #225f72; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Junior Web Assistant Application</h1>
+    <p>This demonstration does not send information to an employer. It shows common HTML form controls.</p>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <input type="hidden" name="source" value="student-practice-form">
+      <fieldset>
+        <legend>About you</legend>
+        <div class="field"><label for="full-name">Full name</label><input id="full-name" name="full-name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="password">Create a practice password</label><input id="password" name="password" type="password" minlength="8" autocomplete="new-password"></div>
+        <div class="field"><label for="portfolio">Portfolio URL</label><input id="portfolio" name="portfolio" type="url" placeholder="https://example.com"></div>
+        <div class="field"><label for="birthday">Date available for interview</label><input id="birthday" name="interview-date" type="date"></div>
+        <div class="field"><label for="interview-time">Preferred interview time</label><input id="interview-time" name="interview-time" type="datetime-local"></div>
+        <div class="field"><label for="start-month">Preferred start month</label><input id="start-month" name="start-month" type="month"></div>
+        <div class="field"><label for="study-week">Available week</label><input id="study-week" name="available-week" type="week"></div>
+        <div class="field"><label for="call-time">Best time to call</label><input id="call-time" name="call-time" type="time"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Role and skills</legend>
+        <div class="field"><label for="role">Role</label><select id="role" name="role"><option>Web assistant</option><option>Content assistant</option><option>Design intern</option></select></div>
+        <div class="field"><label for="years">Practice experience in years</label><input id="years" name="years" type="number" min="0" max="20" value="0"></div>
+        <div class="field"><label for="interest">Interest level</label><input id="interest" name="interest" type="range" min="1" max="5" value="4"></div>
+        <div class="field"><label for="accent">Choose a colour for your project card</label><input id="accent" name="accent" type="color" value="#356c78"></div>
+        <div class="field"><label for="skill-search">Search a skill</label><input id="skill-search" name="skill-search" type="search" list="skill-options" placeholder="Start typing"></div>
+        <datalist id="skill-options"><option value="HTML"><option value="CSS"><option value="Accessibility"><option value="Data basics"></datalist>
+        <div class="field choice"><span>Work preference</span><br>
+          <label><input type="radio" name="work-mode" value="onsite"> On-site</label>
+          <label><input type="radio" name="work-mode" value="remote"> Remote</label>
+          <label><input type="radio" name="work-mode" value="hybrid"> Hybrid</label>
+        </div>
+        <div class="field choice"><span>Tools you have practised</span><br>
+          <label><input type="checkbox" name="tools" value="html"> HTML</label>
+          <label><input type="checkbox" name="tools" value="css"> CSS</label>
+          <label><input type="checkbox" name="tools" value="git"> Git</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Application details</legend>
+        <div class="field"><label for="resume">Attach a sample résumé PDF</label><input id="resume" name="resume" type="file" accept=".pdf,application/pdf"></div>
+        <div class="field"><label for="note">Why does this role interest you?</label><textarea id="note" name="note" rows="5" maxlength="500"></textarea></div>
+        <div class="field choice"><label><input type="checkbox" name="confirm" required> I checked the information in this practice form.</label></div>
+      </fieldset>
+      <input type="submit" value="Review application">
+      <input type="reset" value="Clear form">
+      <input type="button" value="Print this page" onclick="window.print()">
+    </form>
+  </main>
+</body>
+</html>

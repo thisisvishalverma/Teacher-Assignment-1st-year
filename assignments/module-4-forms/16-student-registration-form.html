@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clearly labelled student registration form using common HTML input types.">
+  <title>Student Registration</title>
+  <style>
+    body { max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #21334b; font: 1rem/1.5 system-ui, sans-serif; }
+    label { display: block; margin: .8rem 0 .25rem; font-weight: 600; }
+    input, select { box-sizing: border-box; width: 100%; padding: .65rem; border: 1px solid #8194a5; border-radius: .4rem; font: inherit; }
+    button { margin-top: 1rem; padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #1c6b62; color: white; font: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Student Registration</h1>
+    <p>Use this practice form to explore labels, input types, and required fields.</p>
+    <form action="#" method="get">
+      <label for="student-name">Full name</label>
+      <input id="student-name" name="student-name" type="text" autocomplete="name" required>
+
+      <label for="student-email">Email address</label>
+      <input id="student-email" name="student-email" type="email" autocomplete="email" required>
+
+      <label for="student-phone">Phone number</label>
+      <input id="student-phone" name="student-phone" type="tel" autocomplete="tel">
+
+      <label for="birth-date">Date of birth</label>
+      <input id="birth-date" name="birth-date" type="date">
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="">Choose a course</option>
+        <option value="bca-ai">BCA with Artificial Intelligence</option>
+        <option value="bca">BCA</option>
+        <option value="other">Other course</option>
+      </select>
+
+      <button type="submit">Review registration</button>
+    </form>
+  </main>
+</body>
+</html>
