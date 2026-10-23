@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsiveness audit and improved version of the earlier flex menu exercise.">
+  <title>Responsive Menu Audit</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 1rem; color: #203b43; background: #f5f7f4; font: 1rem/1.5 system-ui, sans-serif; }
+    main { max-width: 980px; margin: auto; }
+    .menu { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; padding: 1rem; border: 1px solid #d5e0db; border-radius: .7rem; background: white; }
+    .brand { margin-right: auto; color: #155d51; font-weight: 800; }
+    .menu a { color: #294b55; text-decoration: none; }
+    .menu .button { padding: .5rem .8rem; border-radius: 99px; background: #155d51; color: white; }
+    .audit { margin-top: 2rem; padding: 1rem; border-left: 4px solid #d9a24e; background: #fff5df; }
+    @media (max-width: 520px) { .menu { align-items: flex-start; } .brand { flex-basis: 100%; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="menu" aria-label="Main navigation"><a class="brand" href="#top">Open Desk</a><a href="#practice">Practice</a><a href="#projects">Projects</a><a href="#about">About</a><a class="button" href="#join">Join a session</a></nav>
+    <section id="top"><h1>Responsive Menu Audit</h1><p>This is an improved version of the menu from Assignment 31.</p></section>
+    <aside class="audit"><h2>Audit notes</h2><ul><li>At narrow widths, a non-wrapping menu can overflow.</li><li>Flexible gaps and <code>flex-wrap</code> let links move to another line.</li><li>The brand gets its own row on small screens for easier scanning.</li></ul></aside>
+    <section id="practice"><h2>Practice</h2><p>Test the menu at a narrow width and watch the links wrap.</p></section>
+    <section id="projects"><h2>Projects</h2><p>Keep the navigation labels short enough to fit comfortably.</p></section>
+    <section id="about"><h2>About</h2><p>This page reworks the flexible menu exercise from Assignment 31.</p></section>
+    <section id="join"><h2>Join a session</h2><p>Pick a topic to practise with the club.</p></section>
+  </main>
+</body>
+</html>

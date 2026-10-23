@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A study guide that changes layout at tablet and phone breakpoints.">
+  <title>Responsive Study Guide</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #273746; background: #f5f7f8; font: 1rem/1.55 system-ui, sans-serif; }
+    .page { max-width: 1080px; margin: auto; padding: 2rem 1rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    article { min-width: 0; padding: 1rem; border-radius: .7rem; background: white; }
+    .top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    nav { display: flex; gap: 1rem; }
+    a { color: #1d665d; }
+    /* Breakpoint 1: make the cards two columns on tablet widths. */
+    @media (max-width: 800px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    /* Breakpoint 2: stack the navigation and cards on phones. */
+    @media (max-width: 520px) { .top { align-items: flex-start; flex-direction: column; } nav { flex-wrap: wrap; } .cards { grid-template-columns: 1fr; } .page { padding-top: 1rem; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top"><div><p>Open Desk</p><h1>Responsive Study Guide</h1></div><nav aria-label="Main navigation"><a href="#plan">Plan</a><a href="#practice">Practice</a><a href="#review">Review</a></nav></header>
+    <p>The layout has three columns on wide screens, two on tablet widths, and one on phones.</p>
+    <section class="cards" aria-label="Study steps"><article id="plan"><h2>Plan</h2><p>Choose a topic that fits the time you have.</p></article><article id="practice"><h2>Practice</h2><p>Try a short example and explain the result.</p></article><article id="review"><h2>Review</h2><p>Write a note about what to try next.</p></article></section>
+  </main>
+</body>
+</html>

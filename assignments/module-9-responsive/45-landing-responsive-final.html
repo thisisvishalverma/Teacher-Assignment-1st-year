@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A complete responsive StudySpring landing page with accessible navigation and flexible content.">
+  <title>StudySpring - Learn at Your Pace</title>
+  <style>
+    :root { --ink: #203d45; --muted: #57706e; --green: #1c6259; --cream: #faf9f5; --mint: #e3efe9; --gold: #f2ce7b; font: 1rem/1.6 system-ui, sans-serif; color: var(--ink); background: var(--cream); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; }
+    .shell { width: min(100% - 2rem, 1100px); margin-inline: auto; }
+    header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1rem; }
+    .brand { color: var(--green); font-size: 1.35rem; font-weight: 850; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: .8rem 1.4rem; }
+    nav a { color: var(--ink); text-decoration: none; }
+    nav a:hover { text-decoration: underline; text-underline-offset: .25em; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr); align-items: center; gap: clamp(1rem, 5vw, 3.5rem); min-height: 480px; padding: clamp(1.25rem, 5vw, 3.25rem); border-radius: 1.4rem; background: var(--mint); }
+    .eyebrow { color: #9a5538; font-size: .82rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    h1 { max-width: 11ch; margin: .25rem 0 1rem; font-size: clamp(2.6rem, 7vw, 5.2rem); line-height: .98; letter-spacing: -.045em; }
+    .hero p:not(.eyebrow) { max-width: 52ch; color: #3f5b5c; }
+    .button { display: inline-block; margin-top: .5rem; padding: .75rem 1.05rem; border-radius: 99px; background: var(--green); color: white; font-weight: 700; text-decoration: none; }
+    .visual { display: grid; min-height: 300px; place-items: center; border-radius: 48% 52% 58% 42%; background: var(--gold); }
+    .lesson-card { width: min(180px, 70%); padding: 1.4rem; border-radius: .9rem; background: var(--green); color: white; box-shadow: 12px 14px 0 #203d4524; transform: rotate(-4deg); }
+    .lesson-card span { display: block; margin-top: .6rem; color: #e7f2eb; font-size: .9rem; }
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-block: 2.5rem; }
+    .features article { padding: 1.2rem; border: 1px solid #d8e2dc; border-radius: .8rem; background: white; }
+    .features h2 { margin-top: 0; font-size: 1.25rem; }
+    .cta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 2rem; padding: 1.5rem; border-radius: 1rem; background: #f4e5c5; }
+    footer { padding: 1.5rem 0; color: var(--muted); border-top: 1px solid #d8e2dc; }
+    @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .visual { min-height: 230px; } .features { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { header { align-items: flex-start; flex-direction: column; } nav { gap: .55rem 1rem; } .hero { padding: 1.25rem; } .visual { min-height: 190px; } .features { grid-template-columns: 1fr; padding-block: 1.5rem; } .cta { align-items: flex-start; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header><a class="brand" href="#home">StudySpring</a><nav aria-label="Main navigation"><a href="#path">Learning path</a><a href="#stories">Stories</a><a href="#about">About</a></nav></header>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div><p class="eyebrow">Learn at your own pace</p><h1 id="hero-title">Make a little progress every day.</h1><p>StudySpring is a sample learning space for building steady study habits through short lessons and practical activities.</p><a class="button" href="#path">Explore the learning path</a></div>
+        <div class="visual" aria-hidden="true"><div class="lesson-card"><strong>Today's lesson</strong><span>Learn · Try · Grow</span></div></div>
+      </section>
+      <section class="features" id="path" aria-label="Learning path">
+        <article><h2>Short lessons</h2><p>Focus on one new idea at a time and give it your full attention.</p></article>
+        <article id="stories"><h2>Practice stories</h2><p>Connect each lesson to a small example you can build and explain.</p></article>
+        <article id="about"><h2>Steady progress</h2><p>Keep a record of what you tried and what you want to learn next.</p></article>
+      </section>
+      <section class="cta"><div><h2>Start with one small question.</h2><p>Choose a topic and make your first practice step.</p></div><a class="button" href="#home">Back to the top</a></section>
+    </main>
+    <footer><p>StudySpring is a fictional student project created for HTML and CSS practice.</p></footer>
+  </div>
+</body>
+</html>
