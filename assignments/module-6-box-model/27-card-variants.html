@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three original card styles comparing border radius and background choices.">
+  <title>Card Style Variants</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem; background: #f4f5f8; color: #233348; font: 1rem/1.55 system-ui, sans-serif; }
+    main { max-width: 1040px; margin: auto; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card { min-height: 220px; padding: 1.25rem; }
+    .card h2 { margin-top: 0; }
+    .soft { border: 1px solid #d3dce5; border-radius: 1rem; background: white; }
+    .bold { border: 3px solid #315a73; border-radius: .25rem; background: #dcecf1; }
+    .warm { border: 2px solid #d39452; border-radius: 2rem .5rem 2rem .5rem; background: #fff0d9; }
+    @media (max-width: 680px) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Three Ways to Shape a Card</h1>
+    <p>Each card uses a different combination of border, corner radius, and background.</p>
+    <div class="cards">
+      <article class="card soft"><h2>Quiet</h2><p>A light border and rounded corners keep a reading note gentle.</p></article>
+      <article class="card bold"><h2>Clear</h2><p>A strong edge makes an important reminder easier to notice.</p></article>
+      <article class="card warm"><h2>Playful</h2><p>Uneven corners add a little character to a creative prompt.</p></article>
+    </div>
+  </main>
+</body>
+</html>

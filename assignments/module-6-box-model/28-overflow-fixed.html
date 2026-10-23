@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A corrected responsive layout that contains wide content and long text.">
+  <title>After: Overflow Fixed</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 1rem; color: #233348; font: 1rem/1.5 system-ui, sans-serif; }
+    main { width: min(100%, 960px); margin-inline: auto; }
+    .layout { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .column { flex: 1 1 280px; min-width: 0; padding: 1rem; border: 2px solid #73908d; border-radius: .6rem; }
+    .poster { width: 100%; max-width: 100%; height: auto; aspect-ratio: 5 / 1; border-radius: .4rem; background: linear-gradient(110deg, #edaa79, #83c8bf); }
+    .url { overflow-wrap: anywhere; }
+    .note { min-height: 60px; padding: .6rem; border: 1px solid #a8b8b5; }
+    .table-scroll { max-width: 100%; overflow-x: auto; }
+    table { min-width: 420px; border-collapse: collapse; }
+    th, td { padding: .5rem; border: 1px solid #a8b8b5; text-align: left; }
+    @media (max-width: 520px) { body { padding: .6rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Overflow Practice: Fixed</h1>
+    <p>The layout now shrinks, wraps, and lets wide table content scroll within its own container.</p>
+    <div class="layout">
+      <section class="column"><h2>Flexible feature panel</h2><div class="poster" role="img" aria-label="A wide decorative colour panel that fits its card"></div><p class="url">A very long label without spaces: studyplannerpracticeexamplepagewithmanyletters</p></section>
+      <aside class="column"><h2>Study note</h2><div class="note">This note can grow with its text instead of clipping at a fixed height.</div></aside>
+    </div>
+    <h2>Wide information table</h2>
+    <div class="table-scroll"><table><thead><tr><th>Topic</th><th>Practice idea</th><th>Review day</th></tr></thead><tbody><tr><td>HTML</td><td>Build a short outline</td><td>Monday</td></tr></tbody></table></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An intentionally broken layout for practising how to diagnose overflow.">
+  <title>Before: Overflow Practice</title>
+  <style>
+    body { margin: 0; padding: 1rem; font: 1rem/1.5 system-ui, sans-serif; }
+    .layout { display: flex; gap: 1rem; width: 980px; }
+    .column { width: 50%; padding: 1rem; border: 2px solid #777; }
+    .poster { width: 900px; height: 180px; background: linear-gradient(110deg, #edaa79, #83c8bf); }
+    .url { white-space: nowrap; }
+    .note { height: 60px; border: 1px solid #777; }
+  </style>
+</head>
+<body>
+  <h1>Overflow Practice: Before</h1>
+  <p>This page is intentionally broken. Resize the window and look for horizontal overflow.</p>
+  <div class="layout">
+    <section class="column"><h2>Fixed-width image area</h2><div class="poster" role="img" aria-label="A wide decorative colour panel"></div><p class="url">A very long label without spaces: studyplannerpracticeexamplepagewithmanyletters</p></section>
+    <aside class="column"><h2>Study note</h2><div class="note">This fixed-height box may clip its content when the text wraps.</div></aside>
+  </div>
+</body>
+</html>

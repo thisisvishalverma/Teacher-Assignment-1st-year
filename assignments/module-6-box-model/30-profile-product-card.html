@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A profile card for a fictional product called the Pocket Study Planner.">
+  <title>Pocket Study Planner Card</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { display: grid; min-height: 100vh; place-items: center; margin: 0; padding: 1rem; background: #eef2f4; color: #263647; font: 1rem/1.5 system-ui, sans-serif; }
+    .card { width: min(100%, 370px); overflow: hidden; border: 1px solid #d3dde2; border-radius: 1rem; background: #fff; box-shadow: 0 14px 36px #24374a18; }
+    .cover { display: grid; min-height: 180px; place-items: center; background: linear-gradient(135deg, #d8efe4, #f6d48a); }
+    .book { display: grid; width: 112px; height: 142px; place-items: center; border: 5px solid #fff; border-radius: .7rem; background: #24655d; color: #fff9e6; font-size: 2rem; box-shadow: 8px 9px 0 #173f3b33; }
+    .body { padding: 1.25rem; }
+    .meta { color: #637481; font-size: .9rem; }
+    .price-row { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+    button { padding: .65rem .9rem; border: 0; border-radius: .4rem; background: #24655d; color: white; font: inherit; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="cover" aria-hidden="true"><div class="book">P</div></div>
+    <div class="body"><p class="meta">STUDY TOOL · POCKET SIZE</p><h1>Pocket Study Planner</h1><p>A simple paper planner for breaking a big topic into smaller sessions.</p><div class="price-row"><strong>Sample price: ₹249</strong><button type="button">View details</button></div></div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A labelled card that demonstrates the four layers of the CSS box model.">
+  <title>Box Model Demo</title>
+  <style>
+    body { margin: 0; padding: 2rem 1rem; background: #f5f2e9; color: #23364b; font: 1rem/1.5 system-ui, sans-serif; }
+    main { max-width: 760px; margin: auto; }
+    .margin-demo { margin: 2rem 0; padding: 1rem; border: 2px dashed #b56e36; background: #fff1dc; }
+    .border-demo { padding: 1rem; border: 8px solid #397b76; background: #e1f0ea; }
+    .content-demo { padding: 1rem; background: white; }
+    .label { display: inline-block; padding: .15rem .45rem; border-radius: 99px; background: #23364b; color: white; font-size: .8rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Box Model Demo</h1>
+    <p>The dashed outer area is margin. The green band is the border. Space inside it is padding. The white centre is the content.</p>
+    <div class="margin-demo">
+      <span class="label">Margin area</span>
+      <div class="border-demo">
+        <span class="label">Border edge</span>
+        <div class="content-demo"><strong>Study card</strong><p>Content sits inside the padding and border.</p></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
