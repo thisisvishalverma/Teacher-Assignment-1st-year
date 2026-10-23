@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A resume restyled with a readable font pairing and calm colour palette.">
+  <title>Student Resume - Typography and Colour</title>
+  <style>
+    :root { --ink: #25364a; --muted: #5f7181; --accent: #315f70; --paper: #fff; }
+    body { margin: 0; padding: 2rem 1rem; color: var(--ink); background: #eaf0f1; font: 1rem/1.65 Arial, sans-serif; }
+    main { max-width: 780px; margin: auto; padding: clamp(1.2rem, 5vw, 3rem); background: var(--paper); border-top: 8px solid var(--accent); }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+    h1 { margin-bottom: .2rem; color: var(--accent); font-size: clamp(2rem, 7vw, 3.5rem); }
+    .contact, .muted { color: var(--muted); }
+    section { padding-block: .7rem; border-bottom: 1px solid #d8e1e2; }
+    li { margin-block: .25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>Your Name</h1><p class="contact">BCA AI Student · your.email@example.com · Your City</p></header>
+    <section><h2>Profile</h2><p>I am building a strong foundation in computing and enjoy practical learning.</p></section>
+    <section><h2>Education</h2><p><strong>Bachelor of Computer Applications - Artificial Intelligence</strong></p><p class="muted">Your College Name · Expected Year</p></section>
+    <section><h2>Skills</h2><ul><li>HTML and CSS fundamentals</li><li>Organising information clearly</li><li>Working through a problem in small steps</li></ul></section>
+    <section><h2>Project</h2><p><strong>Study Notes Page:</strong> a small, accessible web page for grouping revision topics.</p></section>
+  </main>
+</body>
+</html>

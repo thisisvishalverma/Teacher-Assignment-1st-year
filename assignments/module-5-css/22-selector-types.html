@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An example page demonstrating several CSS selector types.">
+  <title>CSS Selector Practice</title>
+  <style>
+    /* 1. Element selector: styles every paragraph. */
+    p { line-height: 1.6; }
+    /* 2. Class selector: styles reusable note cards. */
+    .note { padding: .8rem; border-radius: .5rem; background: #eef4ff; }
+    /* 3. ID selector: styles one unique page heading. */
+    #page-title { color: #264f73; }
+    /* 4. Descendant selector: targets links inside the menu. */
+    nav a { margin-right: .8rem; color: #175c54; }
+    /* 5. Pseudo-class selector: gives a visible hover state. */
+    a:hover { text-decoration-thickness: .18em; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.5 system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Page links"><a href="#selectors">Selectors</a><a href="#practice">Practice</a></nav>
+  <main>
+    <h1 id="page-title">Selectors Find Elements</h1>
+    <section id="selectors"><h2>Five useful patterns</h2><p>CSS selectors choose which HTML elements receive a rule.</p><p class="note">This blue box uses a class selector.</p></section>
+    <section id="practice"><h2>Practice</h2><p>Move a pointer over the menu links to see the hover state.</p></section>
+  </main>
+</body>
+</html>

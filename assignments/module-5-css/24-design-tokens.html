@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small CSS design-token sheet using reusable custom properties.">
+  <title>CSS Design Tokens</title>
+  <style>
+    :root {
+      --color-ink: #20364b;
+      --color-paper: #fbf8f0;
+      --color-brand: #21685d;
+      --color-highlight: #f1bf61;
+      --text-small: .875rem;
+      --text-body: 1rem;
+      --text-title: clamp(2rem, 6vw, 3.5rem);
+      --space-1: .5rem;
+      --space-2: 1rem;
+      --space-3: 2rem;
+    }
+    body { margin: 0; padding: var(--space-3); color: var(--color-ink); background: var(--color-paper); font: var(--text-body)/1.6 system-ui, sans-serif; }
+    main { max-width: 760px; margin: auto; }
+    h1 { color: var(--color-brand); font-size: var(--text-title); line-height: 1.05; }
+    .sample { padding: var(--space-2); border-left: .35rem solid var(--color-highlight); background: white; }
+    small { font-size: var(--text-small); }
+  </style>
+</head>
+<body>
+  <main>
+    <p><small>Reusable values live in the <code>:root</code> selector.</small></p>
+    <h1>A tiny token system</h1>
+    <p class="sample">Changing one custom property can update every part of the page that uses it.</p>
+    <p>Tokens keep repeated colours, text sizes, and spacing consistent.</p>
+  </main>
+</body>
+</html>
