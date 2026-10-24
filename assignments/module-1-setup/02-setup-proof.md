@@ -19,3 +19,9 @@ Do not tick an item unless you have checked it on your computer. Add your versio
 | Node.js | v24.22.1 | [x] |
 | npm | 11.19.1 | [x] |
 | Live Server | 5.7.10 | [x] |
+
+## Screenshot evidence
+
+The screenshot shows the VS Code version, Node.js and npm terminal output, the installed Live Server extension and its version, and a page served locally.
+
+![Setup proof showing the verified tools and a page running with Live Server](../../screenshots/setup-proof.png)
