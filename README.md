@@ -18,14 +18,15 @@ The resume, introduction, college, and portfolio pages use the personal details 
 ## Needs your own action
 
 - **Task 3:** run the terminal practice and open the folder in VS Code; record the commands you actually enter.
-- **Task 5:** the GitHub link is pending. No repository has been pushed.
-- **Task 44:** the desktop skeleton is local; GitHub publication is deferred until you confirm the push.
-- **Task 45:** the responsive landing page is complete locally; its GitHub submission is deferred until that confirmation.
+
+## GitHub submission
+
+The project is pushed to the [`Teacher-Assignment-1st-year` repository](https://github.com/thisisvishalverma/Teacher-Assignment-1st-year), on the `main` branch.
 
 No screenshot, software version, personal contact detail, or GitHub URL has been invented.
 
 ## Local verification
 
-The HTML pages and local references were checked. The 46 HTML routes returned HTTP 200 from a local server; all pages have a title, charset, viewport, and description; image elements have alt text; local asset paths resolve; and in-page links point to existing sections. The responsive exercises were checked at desktop, tablet, and phone widths. Nine meaningful commits are recorded locally on `main`; no remote is configured and nothing has been pushed. See `CHECKLIST.md` for remaining evidence and publication steps.
+The HTML pages and local references were checked. The 46 HTML routes returned HTTP 200 from a local server; all pages have a title, charset, viewport, and description; image elements have alt text; local asset paths resolve; and in-page links point to existing sections. The responsive exercises were checked at desktop, tablet, and phone widths. Eleven meaningful commits are recorded on `main`, and the branch is pushed to the GitHub repository above. See `CHECKLIST.md` for the remaining local action.
 
 No packages or build tools are required to view the pages.

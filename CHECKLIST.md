@@ -7,14 +7,14 @@ The checkbox reflects work completed locally. Items that require your computer o
 - [x] **01** Explain what happens between entering a URL and seeing a page.
 - [x] **02** Verify VS Code, Node.js, npm, and Live Server; save the setup screenshot and versions.
 - [ ] **03** Run the terminal practice and open the project in VS Code; record your commands.
-- [x] **04** Create at least three meaningful Git commits. (Nine local commits are recorded.)
-- [ ] **05** Create/select your separate GitHub repository, confirm the push, and add its URL.
+- [x] **04** Create at least three meaningful Git commits. (Eleven commits are recorded.)
+- [x] **05** Create/select your separate GitHub repository, push the project, and add its URL.
 
 ## Module 2: HTML Basics
 
 - [x] **06** Basic page with a title and heading levels.
-- [x] **07** Text-only resume page with editable placeholders.
-- [x] **08** Semantic resume page.
+- [x] **07** Personalized text-only resume page.
+- [x] **08** Personalized semantic resume page.
 - [x] **09** Corrected HTML debugging exercise and notes.
 - [x] **10** Personal introduction page.
 
@@ -71,13 +71,12 @@ The checkbox reflects work completed locally. Items that require your computer o
 - [x] **41** Two breakpoints; checked at 1280px, 768px, and 390px.
 - [x] **42** Responsive menu audit and fix; checked at wide and phone widths.
 - [x] **43** Landing page combining Grid and Flexbox.
-- [x] **44** Desktop skeleton is built and committed locally; push it after your confirmation.
-- [x] **45** Responsive landing page checked at 1280px, 700px, and 390px; GitHub submission remains pending your confirmation.
+- [x] **44** Desktop skeleton is built and included in the GitHub push.
+- [x] **45** Responsive landing page checked at 1280px, 700px, and 390px, and pushed to GitHub.
 
 ## Evidence and submission still needed
 
 - Task 3 terminal run and VS Code action.
-- [x] Task 4 local commit history has nine meaningful commits.
-- Task 5 GitHub repository link and confirmed push.
-- Task 44 push after your confirmation.
-- Task 45 push after your confirmation.
+- [x] Task 4 local commit history has eleven meaningful commits.
+- [x] Task 5 GitHub repository link and push are complete.
+- [x] Tasks 44 and 45 are included in the GitHub push.
