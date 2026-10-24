@@ -5,7 +5,7 @@ The checkbox reflects work completed locally. Items that require your computer o
 ## Module 1: Setup & Git
 
 - [x] **01** Explain what happens between entering a URL and seeing a page.
-- [ ] **02** Verify VS Code, Node.js, and Live Server; add your real screenshot.
+- [x] **02** Verify VS Code, Node.js, npm, and Live Server; save the setup screenshot and versions.
 - [ ] **03** Run the terminal practice and open the project in VS Code; record your commands.
 - [x] **04** Create at least three meaningful Git commits. (Nine local commits are recorded.)
 - [ ] **05** Create/select your separate GitHub repository, confirm the push, and add its URL.
@@ -44,7 +44,7 @@ The checkbox reflects work completed locally. Items that require your computer o
 
 ## Module 6: Box Model & Positioning
 
-- [ ] **26** Capture and annotate your own box-model screenshot.
+- [x] **26** Capture and annotate your own box-model screenshot.
 - [x] **27** Three card variants.
 - [x] **28** Before-and-after overflow exercise with fix notes.
 - [x] **29** Hero section using position and z-index.
@@ -76,10 +76,8 @@ The checkbox reflects work completed locally. Items that require your computer o
 
 ## Evidence and submission still needed
 
-- Task 2 setup screenshot and actual installed versions.
 - Task 3 terminal run and VS Code action.
 - [x] Task 4 local commit history has nine meaningful commits.
 - Task 5 GitHub repository link and confirmed push.
-- Task 26 annotated screenshot from your computer.
 - Task 44 push after your confirmation.
 - Task 45 push after your confirmation.

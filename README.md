@@ -11,16 +11,14 @@ This project contains original, beginner-friendly work for the 45 HTML and CSS p
 
 Each exercise has a numbered file name. Open a `.html` file in a browser to view it. The two multi-page projects are tasks 20 and 25; keep their files together so their shared `style.css` loads. If you use Live Server, open the project folder in VS Code and start it on the page you want to view.
 
-## Personalise before submission
+## Personal pages
 
-The resume and college pages use placeholders such as `Your Name`, `Your College Name`, and `your.email@example.com`. Replace them with details you want to submit. The club and product examples are clearly fictional samples.
+The resume, introduction, college, and portfolio pages use the personal details you supplied. The Open Desk club and product pages are fictional assignment examples; Bareilly is used as the sample club location.
 
 ## Needs your own action
 
-- **Task 2:** verify your installed versions and take the real setup screenshot.
 - **Task 3:** run the terminal practice and open the folder in VS Code; record the commands you actually enter.
 - **Task 5:** the GitHub link is pending. No repository has been pushed.
-- **Task 26:** take and annotate the box-model screenshot on your computer.
 - **Task 44:** the desktop skeleton is local; GitHub publication is deferred until you confirm the push.
 - **Task 45:** the responsive landing page is complete locally; its GitHub submission is deferred until that confirmation.
 
