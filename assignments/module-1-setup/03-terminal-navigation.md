@@ -27,5 +27,28 @@ From this assignment's folder, create `practice-site`, then add `css`, `images`,
 Write the commands you actually entered below. Keep your own terminal screenshot if your teacher requests proof.
 
 ```text
-_Record your commands here after running the practice._
+Get-Location
+Get-ChildItem
+Get-ChildItem -Force
+New-Item -ItemType Directory practice-site
+Set-Location practice-site
+New-Item -ItemType Directory css, images
+New-Item -ItemType File index.html
+New-Item -ItemType File css/style.css
+Set-Location css
+Set-Location ..
+Get-ChildItem -Recurse
+Rename-Item index.html home.html
+Rename-Item home.html index.html
+Set-Location ..
+Get-Location
+Get-ChildItem .\practice-site -Recurse
+Resolve-Path .\practice-site
+if ((Resolve-Path .\practice-site).Path -eq 'C:\Users\dell\Documents\html-css-45-practicals\assignments\module-1-setup\practice-site') { Remove-Item -LiteralPath 'C:\Users\dell\Documents\html-css-45-practicals\assignments\module-1-setup\practice-site' -Recurse -Force }
+Test-Path .\practice-site
+code .
+code .
+code .
 ```
+
+The practice folder was removed after its resolved path was checked. `Test-Path` returned `False`. `code .` was run from this assignment folder; VS Code was detected as running afterward, but its window could not be visually verified because computer-use capture timed out. Keep a terminal screenshot only if your teacher requests one.

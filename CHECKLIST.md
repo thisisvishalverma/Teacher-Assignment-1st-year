@@ -6,7 +6,7 @@ The checkbox reflects work completed locally. Items that require your computer o
 
 - [x] **01** Explain what happens between entering a URL and seeing a page.
 - [x] **02** Verify VS Code, Node.js, npm, and Live Server; save the setup screenshot and versions.
-- [ ] **03** Run the terminal practice and open the project in VS Code; record your commands.
+- [x] **03** Run the terminal practice, run `code .` from the assignment folder, and record the commands. (VS Code was detected running; its window could not be visually verified.)
 - [x] **04** Create at least three meaningful Git commits. (Eleven commits are recorded.)
 - [x] **05** Create/select your separate GitHub repository, push the project, and add its URL.
 
@@ -74,9 +74,8 @@ The checkbox reflects work completed locally. Items that require your computer o
 - [x] **44** Desktop skeleton is built and included in the GitHub push.
 - [x] **45** Responsive landing page checked at 1280px, 700px, and 390px, and pushed to GitHub.
 
-## Evidence and submission still needed
+## Evidence and submission status
 
-- Task 3 terminal run and VS Code action.
 - [x] Task 4 local commit history has eleven meaningful commits.
 - [x] Task 5 GitHub repository link and push are complete.
 - [x] Tasks 44 and 45 are included in the GitHub push.
